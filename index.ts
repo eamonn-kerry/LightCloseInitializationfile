@@ -13,7 +13,7 @@ app.get('/test1', (req, res) => {
   res.send('This is the first test route')
 })
 
-app.get('/test2/{var1}', (req, res) => {
+app.get('/test2/:var1', (req, res) => {
   if (req.params['var1'] === 'test') {
     return res.send('Confirming test')
   }
